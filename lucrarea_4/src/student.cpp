@@ -5,6 +5,10 @@ using namespace std;
 
 Student::Student(string firstName, string lastName, int age, string email) {
     this->age = new int;
+    
+    if(this->age == nullptr) 
+        cout << "The memory was not properly allocated." << endl;
+    
     this->firstName = firstName;
     this->lastName = lastName;
     *this->age = age;
@@ -32,5 +36,7 @@ void Student::displayInformation() {
 
 Student::~Student() {
     cout << "The destructor of \"Student\" has been called." << endl;
-    delete age;
+    
+    if(this->age != nullptr)
+        delete age;
 }
