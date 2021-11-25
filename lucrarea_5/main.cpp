@@ -21,20 +21,21 @@ int main(void) {
     cout << "Tuple 3: " << tuple3.getA() << " " << tuple3.getB() << endl;
    */
 
-    /* Item11
+     
     Operation operation1(new Complex(3, 4));
     Operation operation2(new Complex(6, 8));
     Operation* operation3 = &operation1;
+    Operation* operation4 = &operation1;
 
     cout << operation1.getModulus() << endl;
     cout << operation3->getModulus() << endl;
-    *operation3 = operation1;
+    *operation3 = *operation4;
     cout << operation3->getModulus() << endl;
     cout << operation1.getModulus() << endl << endl;
 
     *operation3 = operation2;
     cout << operation3->getModulus() << endl;
-    */
+    
 
     /* Item 12
     PlanePoint planePoint1(4, 5);
