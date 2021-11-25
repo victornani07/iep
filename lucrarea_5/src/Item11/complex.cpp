@@ -3,6 +3,8 @@
 
 using namespace std;
 
+Complex::Complex() : real(0), imaginary(0) {}
+
 Complex::Complex(double real, double imaginary) {
     this->real = real;
     this->imaginary = imaginary;

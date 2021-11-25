@@ -11,7 +11,7 @@ class Complex {
         double imaginary;
 
     public:
-        Complex() = default;
+        Complex();
         Complex(double real, double imaginary);
         double getReal();
         double getImaginary();

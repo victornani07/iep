@@ -3,7 +3,7 @@
 
 using namespace std;
 
-PlanePoint::PlanePoint() {
+PlanePoint::PlanePoint() : x(0), y(0) {
     cout << "Base class default constructor has been called." << endl;
 }
 

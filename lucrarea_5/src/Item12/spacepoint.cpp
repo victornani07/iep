@@ -4,7 +4,7 @@
 
 using namespace std;
 
-SpacePoint::SpacePoint() {
+SpacePoint::SpacePoint() : PlanePoint(), z(0) {
     cout << "Derived class default constructor has been called." << endl << endl;
 }
 
