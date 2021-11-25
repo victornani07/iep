@@ -1,5 +1,5 @@
 add_library(
-    lab
+    src
     ./Item10/tuple.hpp
     ./Item10/tuple.cpp
     ./Item11/complex.hpp
@@ -12,6 +12,6 @@ add_library(
     ./Item12/spacepoint.cpp
 )
 
-target_include_directories(lab 
+target_include_directories(src
     PUBLIC 
     "${CMAKE_CURRENT_SOURCE_DIR}/Item10")
