@@ -16,6 +16,7 @@ class Operation {
         Operation& operator= (const Operation&);  
         Complex* getComplexNumber();
         double getModulus();  
+        ~Operation();
 };
 
 #endif
