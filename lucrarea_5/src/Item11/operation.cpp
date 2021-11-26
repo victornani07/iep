@@ -33,3 +33,8 @@ double Operation::getModulus() {
 Complex* Operation::getComplexNumber() {
     return this->complexNumber;
 }
+
+Operation::~Operation() {
+    cout << "Operation class destructor has been called." << endl;
+    delete complexNumber;
+}
